@@ -1,9 +1,9 @@
 # Deep Learning Projects
 
-Twelve deep-learning projects in **PyTorch**, ordered from first principles to current generative models: building networks and optimisers from scratch, then CNNs, RNNs, self-supervised and multimodal learning, parameter-efficient fine-tuning of LLMs, and three families of generative models (VAEs, VQ-VAEs and diffusion).
+Thirteen deep-learning projects in **PyTorch**, ordered from first principles to current generative models: building networks and optimisers from scratch, then CNNs and RNNs, self-supervised and multimodal learning, parameter-efficient fine-tuning of LLMs, and three families of generative models (VAEs, VQ-VAEs and diffusion).
 
 <p align="center">
-  <img src="12-diffusion-image-editing/figures/guidance_sweep.png" width="95%" alt="Stable Diffusion classifier-free guidance sweep">
+  <img src="13-diffusion-image-editing/figures/guidance_sweep.png" width="95%" alt="Stable Diffusion classifier-free guidance sweep">
 </p>
 
 ## Projects
@@ -20,25 +20,26 @@ Twelve deep-learning projects in **PyTorch**, ordered from first principles to c
 
 | # | Project | Highlights |
 |---|---|---|
-| 04 | [CAPTCHA reading with U-Net](04-captcha-segmentation-unet) | U-Net segmentation + multi-head CNN reader; 4× the character accuracy of an end-to-end CNN |
-| 05 | [RNNs and LSTMs on IMDB](05-rnn-sentiment-imdb) | Built-in and from-scratch RNN/LSTM cells; LSTM 85.7% test accuracy |
+| 04 | [CNN emoji classification](04-cnn-emoji-classification) | CNN from scratch, augmentation, error analysis, feature maps; 97.6% test accuracy |
+| 05 | [CAPTCHA reading with U-Net](05-captcha-segmentation-unet) | U-Net segmentation + multi-head CNN reader; 4× the character accuracy of an end-to-end CNN |
+| 06 | [RNNs and LSTMs on IMDB](06-rnn-sentiment-imdb) | Built-in and from-scratch RNN/LSTM cells; LSTM 85.7% test accuracy |
 
 ### Representation learning and foundation models
 
 | # | Project | Highlights |
 |---|---|---|
-| 06 | [SimCLR self-supervised learning](06-simclr-self-supervised) | NT-Xent loss from scratch; linear probe 62.8% top-1 / 97.3% top-5 on STL-10 |
-| 07 | [CLIP for satellite imagery](07-clip-vision-analysis) | Zero-shot 67.8% → **95.3%** top-1 on RESISC45 with LoRA; prompt engineering and embedding analysis |
-| 08 | [QLoRA fine-tuning of an LLM](08-llm-finetuning-qlora) | Qwen2.5-0.5B in 4-bit with LoRA; rank ablation; task-specialised adapters for GSM8K, CommonsenseQA and AG News |
+| 07 | [SimCLR self-supervised learning](07-simclr-self-supervised) | NT-Xent loss from scratch; linear probe 62.8% top-1 / 97.3% top-5 on STL-10 |
+| 08 | [CLIP for satellite imagery](08-clip-vision-analysis) | Zero-shot 67.8% → **95.3%** top-1 on RESISC45 with LoRA; prompt engineering and embedding analysis |
+| 09 | [QLoRA fine-tuning of an LLM](09-llm-finetuning-qlora) | Qwen2.5-0.5B in 4-bit with LoRA; rank ablation; task-specialised adapters for GSM8K, CommonsenseQA and AG News |
 
 ### Generative models
 
 | # | Project | Highlights |
 |---|---|---|
-| 09 | [VAE on CelebA-HQ](09-vae-celeba-inpainting) | Inpainting, posterior-collapse diagnostics (64/64 active units), latent attribute editing |
-| 10 | [VQ-VAE-2 on Omniglot](10-vq-vae-2-omniglot) | EMA codebooks, two-level hierarchy; reconstruction FID 21.6; hierarchy ablation |
-| 11 | [DDPM from scratch](11-ddpm-mnist) | U-Net with attention and time embeddings; unconditional and classifier-free-guided conditional generation |
-| 12 | [Diffusion-based image editing](12-diffusion-image-editing) | Stable Diffusion dissected: latent space, schedules, DDIM, guidance, CLIP conditioning, InstructPix2Pix, inpainting |
+| 10 | [VAE on CelebA-HQ](10-vae-celeba-inpainting) | Inpainting, posterior-collapse diagnostics (64/64 active units), latent attribute editing |
+| 11 | [VQ-VAE-2 on Omniglot](11-vq-vae-2-omniglot) | EMA codebooks, two-level hierarchy; reconstruction FID 21.6; hierarchy ablation |
+| 12 | [DDPM from scratch](12-ddpm-mnist) | U-Net with attention and time embeddings; unconditional and classifier-free-guided conditional generation |
+| 13 | [Diffusion-based image editing](13-diffusion-image-editing) | Stable Diffusion dissected: latent space, schedules, DDIM, guidance, CLIP conditioning, InstructPix2Pix, inpainting |
 
 Each folder has its own README with the method, results, figures and run instructions.
 
